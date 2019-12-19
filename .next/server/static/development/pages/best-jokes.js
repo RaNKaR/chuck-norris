@@ -112,7 +112,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function BestJokes({
-  stars
+  jokes
 }) {
   return __jsx("div", {
     __source: {
@@ -132,7 +132,7 @@ function BestJokes({
       lineNumber: 7
     },
     __self: this
-  }, stars.map(star => {
+  }, jokes.map(star => {
     return __jsx("li", {
       __source: {
         fileName: _jsxFileName,
@@ -149,7 +149,7 @@ BestJokes.getInitialProps = async ({
   const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()('http://api.icndb.com/jokes/random/30');
   const json = await res.json();
   return {
-    stars: json.value
+    jokes: json.value
   };
 };
 

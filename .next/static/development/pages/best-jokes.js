@@ -817,7 +817,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 function BestJokes(_ref) {
-  var stars = _ref.stars;
+  var jokes = _ref.jokes;
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
@@ -836,7 +836,7 @@ function BestJokes(_ref) {
       lineNumber: 7
     },
     __self: this
-  }, stars.map(function (star) {
+  }, jokes.map(function (star) {
     return __jsx("li", {
       __source: {
         fileName: _jsxFileName,
@@ -865,7 +865,7 @@ BestJokes.getInitialProps = function _callee(_ref2) {
         case 6:
           json = _context.sent;
           return _context.abrupt("return", {
-            stars: json.value
+            jokes: json.value
           });
 
         case 8:
